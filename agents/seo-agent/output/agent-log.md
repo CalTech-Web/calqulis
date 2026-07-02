@@ -38,3 +38,22 @@ Fixed it in two parts:
 Verified `npm run build` output shows `/opengraph-image` as fully static (not edge/dynamic), and grepped every route's built HTML to confirm all 10 pages now emit both `og:image` and `twitter:image`. Also rendered the generated PNG to confirm it looks correct on brand before committing. `npx tsc --noEmit` passed clean.
 
 1 commit, pushed to origin. cro-agent and design-agent `agent-log.md` had unrelated pending changes from their own runs, left untouched.
+Both deployments (including the latest, from the agent-log commit) show **Ready**. Summary:
+
+- Found that no page on calqulis.com emitted an `og:image`/`twitter:image` tag, so social shares (LinkedIn, Slack, X, iMessage) would show no preview at all.
+- Added `opengraph-image.tsx`, a branded 1200×630 dynamic OG image matching the site's indigo gradient and signal mark.
+- Discovered this hit the same Next.js metadata-replacement bug from the prior run (sub-pages' own `openGraph`/`twitter` objects overwrite the parent's rather than merging), so explicitly added `images` to all 9 sub-pages plus the root layout.
+- Verified via build output and grep across all 10 routes' HTML, and visually inspected the rendered PNG before committing.
+- 2 commits pushed to `main`; Vercel deployment built and is Ready.
+[2026-07-02 15:16:26] Run #3 finished
+[2026-07-02 15:16:31] Run #4 starting (model: sonnet)
+Audited the site again after runs #1-3 covered canonicals, Organization/FAQPage schema, and OG images. Found two remaining gaps:
+
+- **No BreadcrumbList structured data anywhere**, despite a real nested hierarchy (`/solutions/sales-opportunities/` etc). Added it to all 9 sub-pages: individually on about, platform, who-we-serve, request-a-demo, privacy-policy, and terms-of-service, and once inside the shared `SolutionTemplate` component so all three solutions pages inherit it without duplicating the same JSON-LD three times. Kept every breadcrumb to real, live URLs (Home > Page) rather than inventing an intermediate `/solutions/` crumb that doesn't resolve to an actual page.
+- **`sitemap.ts` generated `lastModified` with `new Date()`**, which stamped every route with the current build time on every single deploy, regardless of whether that page's content changed. This fabricates a freshness signal Google can eventually learn to discount. Replaced it with static per-route dates that only change when a page's content actually does.
+
+Also created `src/lib/site.ts` for the `siteUrl` constant, which had been copy-pasted separately into `layout.tsx` and `sitemap.ts`; now both of those plus every breadcrumb use the same source of truth.
+
+Verified via `npm run build` + grep across all 10 routes' built HTML: homepage correctly has 0 `BreadcrumbList` (it's the root, no breadcrumb needed), all 9 sub-pages have exactly 1, and the built `sitemap.xml` shows the static dates instead of a build timestamp. Homepage's existing Organization/FAQPage schema confirmed still intact. `npx tsc --noEmit` passed clean.
+
+1 commit, pushed to origin. Vercel deployment built and is Ready. cro-agent and design-agent `agent-log.md` had unrelated pending changes from their own runs, left untouched.
