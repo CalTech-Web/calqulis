@@ -5,3 +5,4 @@ site/.next/
 site/.vercel/
 site/*.tsbuildinfo
 site/next-env.d.ts
+.vercel
