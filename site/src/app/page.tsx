@@ -2,6 +2,7 @@ import Link from "next/link";
 import Button from "@/components/Button";
 import Section from "@/components/Section";
 import NetworkMotif from "@/components/NetworkMotif";
+import FaqAccordion from "@/components/FaqAccordion";
 
 const useCases = [
   {
@@ -239,14 +240,7 @@ export default function Home() {
           <h2 className="text-center text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
             Frequently asked questions
           </h2>
-          <div className="mt-12 divide-y divide-slate-200">
-            {faqs.map((item) => (
-              <div key={item.q} className="py-6">
-                <h3 className="text-lg font-semibold text-slate-900">{item.q}</h3>
-                <p className="mt-2 leading-relaxed text-slate-600">{item.a}</p>
-              </div>
-            ))}
-          </div>
+          <FaqAccordion items={faqs} />
         </div>
       </Section>
     </>
