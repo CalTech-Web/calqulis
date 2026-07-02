@@ -3,6 +3,7 @@ import { Inter, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { siteUrl } from "@/lib/site";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -14,8 +15,6 @@ const interTight = Inter_Tight({
   subsets: ["latin"],
   weight: ["600", "700"],
 });
-
-const siteUrl = "https://calqulis.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

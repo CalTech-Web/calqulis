@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
@@ -87,6 +89,13 @@ export default function AboutPage() {
           </p>
         </div>
       </Section>
+
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: `${siteUrl}/` },
+          { name: "About", url: `${siteUrl}/about/` },
+        ]}
+      />
     </>
   );
 }

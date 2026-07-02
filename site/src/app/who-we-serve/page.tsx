@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Who We Serve",
@@ -129,6 +131,13 @@ export default function WhoWeServePage() {
           </div>
         </div>
       </Section>
+
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: `${siteUrl}/` },
+          { name: "Who We Serve", url: `${siteUrl}/who-we-serve/` },
+        ]}
+      />
     </>
   );
 }

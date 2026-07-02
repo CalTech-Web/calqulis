@@ -3,6 +3,8 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Platform",
@@ -147,6 +149,13 @@ export default function PlatformPage() {
           </div>
         </div>
       </Section>
+
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: `${siteUrl}/` },
+          { name: "Platform", url: `${siteUrl}/platform/` },
+        ]}
+      />
     </>
   );
 }

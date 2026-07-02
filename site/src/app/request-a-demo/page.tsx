@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import DemoForm from "@/components/DemoForm";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Request a Demo",
@@ -56,6 +58,13 @@ export default function RequestDemoPage() {
           </p>
         </div>
       </Section>
+
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: `${siteUrl}/` },
+          { name: "Request a Demo", url: `${siteUrl}/request-a-demo/` },
+        ]}
+      />
     </>
   );
 }

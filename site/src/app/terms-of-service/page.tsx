@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
@@ -104,6 +106,13 @@ export default function TermsOfServicePage() {
           </div>
         </div>
       </Section>
+
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: `${siteUrl}/` },
+          { name: "Terms of Service", url: `${siteUrl}/terms-of-service/` },
+        ]}
+      />
     </>
   );
 }

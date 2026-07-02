@@ -2,6 +2,8 @@ import Link from "next/link";
 import PageHero from "./PageHero";
 import Section from "./Section";
 import Button from "./Button";
+import BreadcrumbJsonLd from "./BreadcrumbJsonLd";
+import { siteUrl } from "@/lib/site";
 
 type Solution = {
   eyebrow: string;
@@ -124,6 +126,13 @@ export default function SolutionTemplate({
           </div>
         </div>
       </Section>
+
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: `${siteUrl}/` },
+          { name: title, url: `${siteUrl}${currentHref}` },
+        ]}
+      />
     </>
   );
 }
