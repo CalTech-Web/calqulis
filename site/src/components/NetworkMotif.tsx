@@ -1,3 +1,5 @@
+import type { CSSProperties } from "react";
+
 /**
  * Decorative node/network motif for hero and section backgrounds.
  * Pure SVG, no external image assets. Reinforces "data intelligence"
@@ -39,20 +41,20 @@ export default function NetworkMotif({ className = "" }: { className?: string })
         <line x1="960" y1="440" x2="1100" y2="560" />
       </g>
       <g fill="#22D3EE">
-        <circle cx="120" cy="140" r="3" opacity="0.8" />
-        <circle cx="860" cy="260" r="4" opacity="0.9" />
-        <circle cx="1080" cy="160" r="3" opacity="0.7" />
+        <circle className="node-pulse" style={{ "--pulse-opacity": 0.8, "--pulse-delay": "0s" } as CSSProperties} cx="120" cy="140" r="3" opacity="0.8" />
+        <circle className="node-pulse" style={{ "--pulse-opacity": 0.9, "--pulse-delay": "0.6s" } as CSSProperties} cx="860" cy="260" r="4" opacity="0.9" />
+        <circle className="node-pulse" style={{ "--pulse-opacity": 0.7, "--pulse-delay": "1.2s" } as CSSProperties} cx="1080" cy="160" r="3" opacity="0.7" />
       </g>
       <g fill="#6366F1">
-        <circle cx="360" cy="240" r="4" opacity="0.9" />
-        <circle cx="620" cy="180" r="4" opacity="0.9" />
-        <circle cx="700" cy="400" r="3.5" opacity="0.8" />
-        <circle cx="960" cy="440" r="3.5" opacity="0.8" />
+        <circle className="node-pulse" style={{ "--pulse-opacity": 0.9, "--pulse-delay": "0.3s" } as CSSProperties} cx="360" cy="240" r="4" opacity="0.9" />
+        <circle className="node-pulse" style={{ "--pulse-opacity": 0.9, "--pulse-delay": "0.9s" } as CSSProperties} cx="620" cy="180" r="4" opacity="0.9" />
+        <circle className="node-pulse" style={{ "--pulse-opacity": 0.8, "--pulse-delay": "1.5s" } as CSSProperties} cx="700" cy="400" r="3.5" opacity="0.8" />
+        <circle className="node-pulse" style={{ "--pulse-opacity": 0.8, "--pulse-delay": "2.1s" } as CSSProperties} cx="960" cy="440" r="3.5" opacity="0.8" />
       </g>
       <g fill="#FFFFFF">
-        <circle cx="300" cy="420" r="2.5" opacity="0.6" />
-        <circle cx="520" cy="520" r="2.5" opacity="0.6" />
-        <circle cx="1100" cy="560" r="2.5" opacity="0.5" />
+        <circle className="node-pulse" style={{ "--pulse-opacity": 0.6, "--pulse-delay": "0.9s" } as CSSProperties} cx="300" cy="420" r="2.5" opacity="0.6" />
+        <circle className="node-pulse" style={{ "--pulse-opacity": 0.6, "--pulse-delay": "1.8s" } as CSSProperties} cx="520" cy="520" r="2.5" opacity="0.6" />
+        <circle className="node-pulse" style={{ "--pulse-opacity": 0.5, "--pulse-delay": "2.4s" } as CSSProperties} cx="1100" cy="560" r="2.5" opacity="0.5" />
       </g>
     </svg>
   );
