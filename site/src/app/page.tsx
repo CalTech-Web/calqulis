@@ -141,7 +141,7 @@ export default function Home() {
               </h3>
               <p className="mt-3 flex-1 text-slate-600">{useCase.description}</p>
               <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-indigo">
-                Learn more
+                Explore {useCase.title}
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <path
                     d="M3.5 8h9M8.5 4l4 4-4 4"
