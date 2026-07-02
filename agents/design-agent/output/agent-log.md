@@ -20,3 +20,12 @@ Verified the build compiles cleanly and the class renders correctly in the HTML.
 Stale notification from an earlier sleep — deployment is already confirmed successful, task complete.
 [2026-07-02 14:40:34] Run #2 finished
 [2026-07-02 14:40:40] Run #3 starting (model: sonnet)
+That was just my placeholder monitor completing — no action needed. Waiting on the real deployment status monitor now.
+[2026-07-02 14:42:38] Run #3 finished
+[2026-07-02 14:42:43] Run #4 starting (model: sonnet)
+I'll wait for the deployment check to finish in the background rather than poll manually.
+[2026-07-02 14:46:19] Run #4 finished
+[2026-07-02 14:46:24] Run #5 starting (model: sonnet)
+Deployment check is running in the background; I'll report back once it completes.
+[2026-07-02 14:49:10] Run #5 finished
+[2026-07-02 14:49:10] Reached max loops (5). Stopping.

@@ -36,3 +36,13 @@ Left Privacy Policy and Terms of Service pages' missing subheadlines untouched, 
 
 Committed each task separately (4 commits) and pushed to origin.
 [2026-07-02 15:00:54] Run #3 finished
+All 4 tasks addressed and pushed. Summary of this run:
+
+- **Headlines** — About page's "Behavioral Intelligence, Reimagined" and Platform page's "One platform for behavioral and market intelligence" were both weak, verb-less noun phrases (missed by the prior run's verification pass). Rewrote both into active-voice statements and fixed the Platform subheadline so it no longer just echoes the new headline.
+- **CTAs** — all three homepage use-case cards shared the generic "Learn more" link text. Each now names its specific outcome.
+- **Microtext** — the Platform page's capabilities grid had zero lead-in copy (same anti-pattern fixed elsewhere, missed here since it wasn't attached to an H2). Added a heading + one-liner.
+- **Logo** — re-verified, still a readable vector wordmark, no change needed.
+
+Left Privacy Policy/Terms of Service pages alone (no subheadlines, but they're not conversion surfaces). 4 commits, pushed to origin, agent-log updated. The `design-agent`'s log had unrelated pending changes, left untouched.
+[2026-07-02 15:01:11] Run #3 finished
+[2026-07-02 15:01:11] Reached max loops (3). Stopping.
