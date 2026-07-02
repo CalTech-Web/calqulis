@@ -167,14 +167,22 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
-          {process.map((p) => (
-            <div key={p.step}>
-              <span className="text-sm font-semibold text-brand-cyan">{p.step}</span>
-              <h3 className="mt-2 text-lg font-semibold text-slate-900">{p.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">{p.description}</p>
-            </div>
-          ))}
+        <div className="relative mt-14">
+          <div
+            className="pointer-events-none absolute left-0 right-0 top-6 hidden h-px bg-gradient-to-r from-brand-indigo/0 via-brand-indigo/25 to-brand-cyan/40 lg:block"
+            aria-hidden="true"
+          />
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
+            {process.map((p) => (
+              <div key={p.step} className="relative">
+                <span className="relative z-10 inline-flex h-12 w-12 items-center justify-center rounded-full border border-brand-indigo/20 bg-white text-sm font-semibold text-brand-indigo shadow-sm">
+                  {p.step}
+                </span>
+                <h3 className="mt-4 text-lg font-semibold text-slate-900">{p.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">{p.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </Section>
 
