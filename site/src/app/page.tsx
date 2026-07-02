@@ -194,9 +194,12 @@ export default function Home() {
         </div>
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
           {differentiators.map((item) => (
-            <div key={item} className="flex gap-4 rounded-xl border border-white/10 bg-white/5 p-6">
+            <div
+              key={item}
+              className="group flex gap-4 rounded-xl border border-white/10 bg-white/5 p-6 transition duration-200 ease-out hover:-translate-y-0.5 hover:border-brand-cyan/40 hover:bg-white/[0.08] hover:shadow-lg hover:shadow-brand-cyan/10"
+            >
               <svg
-                className="mt-1 h-5 w-5 shrink-0 text-brand-cyan"
+                className="mt-1 h-5 w-5 shrink-0 text-brand-cyan transition duration-200 ease-out group-hover:scale-110 group-hover:drop-shadow-[0_0_6px_rgba(34,211,238,0.6)]"
                 viewBox="0 0 20 20"
                 fill="none"
                 aria-hidden="true"
