@@ -41,6 +41,16 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Calqulis",
+  legalName: "Calqulis Solutions",
+  url: siteUrl,
+  description:
+    "Calqulis turns behavioral and market intelligence into your next best move. A single platform for sales opportunities, marketing effectiveness, and strategic decisions.",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -49,6 +59,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${interTight.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-white text-slate-900">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
