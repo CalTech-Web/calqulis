@@ -192,6 +192,10 @@ export default function Home() {
           <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
             Why organizations choose Calqulis
           </h2>
+          <p className="mt-4 text-lg leading-relaxed text-slate-300">
+            Six reasons sales, marketing, and strategy teams pick Calqulis over piecing data
+            together themselves.
+          </p>
         </div>
         <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2">
           {differentiators.map((item) => (
@@ -240,6 +244,9 @@ export default function Home() {
           <h2 className="text-center text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
             Frequently asked questions
           </h2>
+          <p className="mt-4 text-center text-lg leading-relaxed text-slate-600">
+            Answers to what teams evaluating Calqulis ask us most.
+          </p>
           <FaqAccordion items={faqs} />
         </div>
       </Section>

@@ -57,6 +57,10 @@ export default function WhoWeServePage() {
       <Section className="bg-white py-20">
         <div className="mx-auto max-w-5xl">
           <h2 className="text-2xl font-semibold text-slate-900">Organizations we serve</h2>
+          <p className="mt-3 text-lg leading-relaxed text-slate-600">
+            From growing companies to national operations, Calqulis scales with the size of
+            your market.
+          </p>
           <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {segments.map((s) => (
               <div key={s.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-8">
@@ -71,6 +75,9 @@ export default function WhoWeServePage() {
       <Section className="bg-slate-50 py-20">
         <div className="mx-auto max-w-5xl">
           <h2 className="text-2xl font-semibold text-slate-900">Teams that use Calqulis</h2>
+          <p className="mt-3 text-lg leading-relaxed text-slate-600">
+            Sales, marketing, and strategy teams all work from the same behavioral intelligence.
+          </p>
           <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {teams.map((t) => (
               <div key={t.title} className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">

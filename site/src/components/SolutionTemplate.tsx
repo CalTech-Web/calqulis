@@ -96,6 +96,9 @@ export default function SolutionTemplate({
       <Section className="bg-white py-20">
         <div className="mx-auto max-w-5xl">
           <h2 className="text-2xl font-semibold text-slate-900">Explore other solutions</h2>
+          <p className="mt-3 text-lg leading-relaxed text-slate-600">
+            Calqulis covers three connected use cases inside a single platform.
+          </p>
           <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {otherSolutions.map((s) => (
               <Link
