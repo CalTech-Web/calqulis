@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Who We Serve",
   description:
     "Calqulis is built for mid sized businesses, large enterprises, and national organizations that want a clearer, evidence based view of buying behavior and market trends.",
+  alternates: {
+    canonical: "/who-we-serve/",
+  },
 };
 
 const segments = [

@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Strategic Decisions",
   description:
     "Aggregate market and behavioral trends into executive level insight that supports planning, market entry, and positioning.",
+  alternates: {
+    canonical: "/solutions/strategic-decisions/",
+  },
 };
 
 const points = [

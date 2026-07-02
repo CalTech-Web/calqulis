@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Platform",
   description:
     "The Calqulis behavioral intelligence platform aggregates multiple sources of commercial and consumer data into one continuously updated, actionable view.",
+  alternates: {
+    canonical: "/platform/",
+  },
 };
 
 const capabilities = [

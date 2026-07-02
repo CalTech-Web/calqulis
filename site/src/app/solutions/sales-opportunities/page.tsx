@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Sales Opportunities",
   description:
     "Surface in market buying signals so sales teams prioritize the right accounts and reach demand before competitors see it.",
+  alternates: {
+    canonical: "/solutions/sales-opportunities/",
+  },
 };
 
 const points = [

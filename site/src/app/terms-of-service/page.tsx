@@ -5,6 +5,9 @@ import Section from "@/components/Section";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "Terms of Service for Calqulis Solutions.",
+  alternates: {
+    canonical: "/terms-of-service/",
+  },
 };
 
 export default function TermsOfServicePage() {

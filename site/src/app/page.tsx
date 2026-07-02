@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Button from "@/components/Button";
 import Section from "@/components/Section";
 import NetworkMotif from "@/components/NetworkMotif";
 import FaqAccordion from "@/components/FaqAccordion";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 const useCases = [
   {

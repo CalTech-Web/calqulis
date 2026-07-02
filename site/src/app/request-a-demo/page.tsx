@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Request a Demo",
   description:
     "Request a demo of Calqulis, the behavioral intelligence platform for sales opportunities, marketing effectiveness, and strategic decisions.",
+  alternates: {
+    canonical: "/request-a-demo/",
+  },
 };
 
 export default function RequestDemoPage() {

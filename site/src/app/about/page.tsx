@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "Calqulis is a pre launch behavioral intelligence platform built for organizations that want to act on buyer behavior, not just observe it.",
+  alternates: {
+    canonical: "/about/",
+  },
 };
 
 export default function AboutPage() {

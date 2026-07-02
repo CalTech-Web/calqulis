@@ -5,6 +5,9 @@ import Section from "@/components/Section";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Privacy Policy for Calqulis Solutions.",
+  alternates: {
+    canonical: "/privacy-policy/",
+  },
 };
 
 export default function PrivacyPolicyPage() {

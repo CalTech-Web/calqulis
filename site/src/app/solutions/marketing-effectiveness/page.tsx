@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Marketing Effectiveness",
   description:
     "Measure which messages, channels, and audiences actually move buyers, then reallocate spend toward what is proven to work.",
+  alternates: {
+    canonical: "/solutions/marketing-effectiveness/",
+  },
 };
 
 const points = [
