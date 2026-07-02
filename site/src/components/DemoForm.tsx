@@ -145,7 +145,7 @@ export default function DemoForm() {
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="w-full rounded-full bg-brand-cyan px-7 py-3.5 text-sm font-semibold text-brand-indigo-deep transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+        className="w-full rounded-full bg-brand-cyan px-7 py-3.5 text-sm font-semibold text-brand-indigo-deep shadow-lg shadow-brand-cyan/25 transition duration-200 ease-out hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand-cyan/40 hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60 disabled:shadow-none disabled:hover:translate-y-0 sm:w-auto"
       >
         {status === "submitting" ? "Sending..." : "Request a Demo"}
       </button>

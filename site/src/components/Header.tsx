@@ -85,7 +85,7 @@ export default function Header() {
         <div className="hidden lg:block">
           <Link
             href="/request-a-demo/"
-            className="rounded-full bg-brand-cyan px-5 py-2.5 text-sm font-semibold text-brand-indigo-deep transition hover:brightness-110"
+            className="rounded-full bg-brand-cyan px-5 py-2.5 text-sm font-semibold text-brand-indigo-deep shadow-md shadow-brand-cyan/25 transition duration-200 ease-out hover:-translate-y-0.5 hover:shadow-lg hover:shadow-brand-cyan/40 hover:brightness-110"
           >
             Request a Demo
           </Link>
