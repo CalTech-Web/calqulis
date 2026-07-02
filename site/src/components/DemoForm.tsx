@@ -1,6 +1,9 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import Script from "next/script";
+
+const TURNSTILE_SITEKEY = "0x4AAAAAACyywom24zjoEvQ4";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -16,6 +19,13 @@ export default function DemoForm() {
     const form = event.currentTarget;
     const data = new FormData(form);
 
+    const turnstileToken = data.get("cf-turnstile-response");
+    if (!turnstileToken) {
+      setStatus("error");
+      setErrorMessage("Please complete the verification challenge and try again.");
+      return;
+    }
+
     const payload = {
       site: "calqulis.com",
       source: "contact-page",
@@ -23,6 +33,7 @@ export default function DemoForm() {
       email: data.get("email"),
       company: data.get("company"),
       message: data.get("message"),
+      turnstileToken,
     };
 
     try {
@@ -59,6 +70,10 @@ export default function DemoForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
+      <Script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        strategy="lazyOnload"
+      />
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="mb-2 block text-sm font-medium text-slate-200">
@@ -118,6 +133,8 @@ export default function DemoForm() {
           placeholder="Tell us a bit about your team and what you would like to see in a demo."
         />
       </div>
+
+      <div className="cf-turnstile" data-sitekey={TURNSTILE_SITEKEY} data-theme="dark" />
 
       {status === "error" && (
         <p className="rounded-lg border border-red-400/30 bg-red-400/10 px-4 py-3 text-sm text-red-300">
