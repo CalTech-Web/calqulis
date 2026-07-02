@@ -114,9 +114,9 @@ export default function Home() {
   return (
     <>
       <section className="relative overflow-hidden brand-gradient-bg">
-        <NetworkMotif className="absolute inset-0 h-full w-full opacity-90" />
-        <div className="absolute inset-0 node-grid opacity-[0.15]" />
-        <div className="relative mx-auto max-w-5xl px-6 py-28 text-center sm:py-36">
+        <NetworkMotif className="network-fade pointer-events-none absolute inset-0 z-0 h-full w-full opacity-90" />
+        <div className="pointer-events-none absolute inset-0 z-0 node-grid opacity-[0.15]" />
+        <div className="relative z-10 mx-auto max-w-5xl px-6 py-28 text-center sm:py-36">
           <p className="mb-6 inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand-cyan">
             Behavioral Intelligence, Reimagined
           </p>

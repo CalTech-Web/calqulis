@@ -45,6 +45,23 @@ body {
   background-size: 28px 28px;
 }
 
+/* Fades the decorative network motif behind the centered hero copy so
+   nodes never sit directly on top of readable text. */
+.network-fade {
+  -webkit-mask-image: radial-gradient(
+    ellipse 65% 55% at 50% 42%,
+    rgba(0, 0, 0, 0.12) 0%,
+    rgba(0, 0, 0, 0.12) 30%,
+    black 78%
+  );
+  mask-image: radial-gradient(
+    ellipse 65% 55% at 50% 42%,
+    rgba(0, 0, 0, 0.12) 0%,
+    rgba(0, 0, 0, 0.12) 30%,
+    black 78%
+  );
+}
+
 .node-pulse {
   transform-box: fill-box;
   transform-origin: center;
@@ -59,8 +76,8 @@ body {
     transform: scale(1);
   }
   50% {
-    opacity: 1;
-    transform: scale(1.7);
+    opacity: 0.9;
+    transform: scale(1.35);
   }
 }
 

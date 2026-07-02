@@ -59,8 +59,8 @@ export default function DemoForm() {
   if (status === "success") {
     return (
       <div className="rounded-2xl border border-brand-emerald/30 bg-brand-emerald/10 p-8 text-center">
-        <h3 className="text-xl font-semibold text-white">Request received</h3>
-        <p className="mt-3 text-slate-300">
+        <h3 className="text-xl font-semibold text-slate-900">Request received</h3>
+        <p className="mt-3 text-slate-600">
           Thank you for your interest in Calqulis. A member of our team will follow up with you
           shortly to schedule your demo.
         </p>
@@ -76,7 +76,7 @@ export default function DemoForm() {
       />
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div>
-          <label htmlFor="name" className="mb-2 block text-sm font-medium text-slate-200">
+          <label htmlFor="name" className="mb-2 block text-sm font-medium text-slate-700">
             Full name
           </label>
           <input
@@ -86,12 +86,12 @@ export default function DemoForm() {
             required
             minLength={2}
             autoComplete="name"
-            className="w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-white placeholder:text-slate-500 focus:border-brand-cyan focus:outline-none focus:ring-1 focus:ring-brand-cyan"
+            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-cyan focus:outline-none focus:ring-1 focus:ring-brand-cyan"
             placeholder="Jane Smith"
           />
         </div>
         <div>
-          <label htmlFor="email" className="mb-2 block text-sm font-medium text-slate-200">
+          <label htmlFor="email" className="mb-2 block text-sm font-medium text-slate-700">
             Work email
           </label>
           <input
@@ -100,14 +100,14 @@ export default function DemoForm() {
             type="email"
             required
             autoComplete="email"
-            className="w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-white placeholder:text-slate-500 focus:border-brand-cyan focus:outline-none focus:ring-1 focus:ring-brand-cyan"
+            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-cyan focus:outline-none focus:ring-1 focus:ring-brand-cyan"
             placeholder="jane@company.com"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="company" className="mb-2 block text-sm font-medium text-slate-200">
+        <label htmlFor="company" className="mb-2 block text-sm font-medium text-slate-700">
           Company
         </label>
         <input
@@ -116,25 +116,25 @@ export default function DemoForm() {
           type="text"
           required
           autoComplete="organization"
-          className="w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-white placeholder:text-slate-500 focus:border-brand-cyan focus:outline-none focus:ring-1 focus:ring-brand-cyan"
+          className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-cyan focus:outline-none focus:ring-1 focus:ring-brand-cyan"
           placeholder="Company name"
         />
       </div>
 
       <div>
-        <label htmlFor="message" className="mb-2 block text-sm font-medium text-slate-200">
+        <label htmlFor="message" className="mb-2 block text-sm font-medium text-slate-700">
           What are you hoping to learn from Calqulis?
         </label>
         <textarea
           id="message"
           name="message"
           rows={5}
-          className="w-full rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-white placeholder:text-slate-500 focus:border-brand-cyan focus:outline-none focus:ring-1 focus:ring-brand-cyan"
+          className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-brand-cyan focus:outline-none focus:ring-1 focus:ring-brand-cyan"
           placeholder="Tell us a bit about your team and what you would like to see in a demo."
         />
       </div>
 
-      <div className="cf-turnstile" data-sitekey={TURNSTILE_SITEKEY} data-theme="dark" />
+      <div className="cf-turnstile" data-sitekey={TURNSTILE_SITEKEY} data-theme="light" />
 
       {status === "error" && (
         <p className="rounded-lg border border-red-400/30 bg-red-400/10 px-4 py-3 text-sm text-red-300">

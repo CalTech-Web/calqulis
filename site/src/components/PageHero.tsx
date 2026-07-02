@@ -12,10 +12,10 @@ type PageHeroProps = {
 export default function PageHero({ eyebrow, title, description, children, compact }: PageHeroProps) {
   return (
     <section className="relative overflow-hidden brand-gradient-bg">
-      <NetworkMotif className="absolute inset-0 h-full w-full opacity-90" />
-      <div className="absolute inset-0 node-grid opacity-[0.15]" />
+      <NetworkMotif className="network-fade pointer-events-none absolute inset-0 z-0 h-full w-full opacity-90" />
+      <div className="pointer-events-none absolute inset-0 z-0 node-grid opacity-[0.15]" />
       <div
-        className={`relative mx-auto max-w-5xl px-6 text-center ${
+        className={`relative z-10 mx-auto max-w-5xl px-6 text-center ${
           compact ? "py-20 sm:py-24" : "py-28 sm:py-36"
         }`}
       >

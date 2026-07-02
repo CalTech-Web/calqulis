@@ -12,7 +12,6 @@ const companyLinks = [
   { label: "About", href: "/about/" },
   { label: "Who We Serve", href: "/who-we-serve/" },
   { label: "Request a Demo", href: "/request-a-demo/" },
-  { label: "Contact", href: "/request-a-demo/" },
 ];
 
 const legalLinks = [
