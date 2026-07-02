@@ -56,8 +56,8 @@ export default function PlatformPage() {
     <>
       <PageHero
         eyebrow="Platform"
-        title="One platform for behavioral and market intelligence"
-        description="Calqulis aggregates multiple sources of commercial and consumer behavioral and market data into one platform, turning raw signal into decision ready insight."
+        title="Turn Raw Signal Into Decision Ready Insight"
+        description="Calqulis aggregates every source of commercial and consumer behavioral and market data into one continuously updated platform, built for sales, marketing, and strategy teams."
       />
 
       <Section className="bg-white py-20">
