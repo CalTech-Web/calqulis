@@ -14,7 +14,7 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About Calqulis"
-        title="Behavioral Intelligence, Reimagined"
+        title="We Act on Buyer Behavior, Not Just Observe It"
         description="Calqulis is a pre launch SaaS platform built for organizations that want to act on buyer behavior, not just observe it."
       />
 
