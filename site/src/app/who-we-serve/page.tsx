@@ -50,7 +50,7 @@ export default function WhoWeServePage() {
     <>
       <PageHero
         eyebrow="Who We Serve"
-        title="Built for serious, established buyers"
+        title="We Serve Serious, Established Buyers"
         description="Calqulis is built for mid sized businesses, large enterprises, and national organizations that want a clearer, evidence based view of buying behavior and market trends."
       />
 
