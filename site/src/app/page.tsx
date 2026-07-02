@@ -3,6 +3,7 @@ import Link from "next/link";
 import Button from "@/components/Button";
 import Section from "@/components/Section";
 import NetworkMotif from "@/components/NetworkMotif";
+import ProcessStory from "@/components/ProcessStory";
 import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
@@ -188,11 +189,11 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="relative mt-14">
-          <div
-            className="pointer-events-none absolute left-0 right-0 top-6 hidden h-px bg-gradient-to-r from-brand-indigo/0 via-brand-indigo/25 to-brand-cyan/40 lg:block"
-            aria-hidden="true"
-          />
+        <div className="mt-12">
+          <ProcessStory />
+        </div>
+
+        <div className="relative mt-10">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
             {process.map((p) => (
               <div key={p.step} className="relative">
