@@ -8,6 +8,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/terms-of-service/",
   },
+  openGraph: {
+    title: "Terms of Service | Calqulis",
+    description: "Terms of Service for Calqulis Solutions.",
+    url: "/terms-of-service/",
+    siteName: "Calqulis",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service | Calqulis",
+    description: "Terms of Service for Calqulis Solutions.",
+  },
 };
 
 export default function TermsOfServicePage() {

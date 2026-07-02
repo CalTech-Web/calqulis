@@ -11,6 +11,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/platform/",
   },
+  openGraph: {
+    title: "Platform | Calqulis",
+    description:
+      "The Calqulis behavioral intelligence platform aggregates multiple sources of commercial and consumer data into one continuously updated, actionable view.",
+    url: "/platform/",
+    siteName: "Calqulis",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Platform | Calqulis",
+    description:
+      "The Calqulis behavioral intelligence platform aggregates multiple sources of commercial and consumer data into one continuously updated, actionable view.",
+  },
 };
 
 const capabilities = [

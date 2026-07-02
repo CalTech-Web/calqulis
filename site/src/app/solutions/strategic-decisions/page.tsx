@@ -8,6 +8,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/solutions/strategic-decisions/",
   },
+  openGraph: {
+    title: "Strategic Decisions | Calqulis",
+    description:
+      "Aggregate market and behavioral trends into executive level insight that supports planning, market entry, and positioning.",
+    url: "/solutions/strategic-decisions/",
+    siteName: "Calqulis",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Strategic Decisions | Calqulis",
+    description:
+      "Aggregate market and behavioral trends into executive level insight that supports planning, market entry, and positioning.",
+  },
 };
 
 const points = [

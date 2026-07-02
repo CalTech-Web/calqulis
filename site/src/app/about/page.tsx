@@ -10,6 +10,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/about/",
   },
+  openGraph: {
+    title: "About | Calqulis",
+    description:
+      "Calqulis is a pre launch behavioral intelligence platform built for organizations that want to act on buyer behavior, not just observe it.",
+    url: "/about/",
+    siteName: "Calqulis",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About | Calqulis",
+    description:
+      "Calqulis is a pre launch behavioral intelligence platform built for organizations that want to act on buyer behavior, not just observe it.",
+  },
 };
 
 export default function AboutPage() {

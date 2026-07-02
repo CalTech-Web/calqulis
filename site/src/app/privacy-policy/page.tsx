@@ -8,6 +8,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/privacy-policy/",
   },
+  openGraph: {
+    title: "Privacy Policy | Calqulis",
+    description: "Privacy Policy for Calqulis Solutions.",
+    url: "/privacy-policy/",
+    siteName: "Calqulis",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Calqulis",
+    description: "Privacy Policy for Calqulis Solutions.",
+  },
 };
 
 export default function PrivacyPolicyPage() {

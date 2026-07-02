@@ -8,6 +8,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/solutions/marketing-effectiveness/",
   },
+  openGraph: {
+    title: "Marketing Effectiveness | Calqulis",
+    description:
+      "Measure which messages, channels, and audiences actually move buyers, then reallocate spend toward what is proven to work.",
+    url: "/solutions/marketing-effectiveness/",
+    siteName: "Calqulis",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Marketing Effectiveness | Calqulis",
+    description:
+      "Measure which messages, channels, and audiences actually move buyers, then reallocate spend toward what is proven to work.",
+  },
 };
 
 const points = [

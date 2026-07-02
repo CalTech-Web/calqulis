@@ -8,6 +8,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/solutions/sales-opportunities/",
   },
+  openGraph: {
+    title: "Sales Opportunities | Calqulis",
+    description:
+      "Surface in market buying signals so sales teams prioritize the right accounts and reach demand before competitors see it.",
+    url: "/solutions/sales-opportunities/",
+    siteName: "Calqulis",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sales Opportunities | Calqulis",
+    description:
+      "Surface in market buying signals so sales teams prioritize the right accounts and reach demand before competitors see it.",
+  },
 };
 
 const points = [

@@ -10,6 +10,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/who-we-serve/",
   },
+  openGraph: {
+    title: "Who We Serve | Calqulis",
+    description:
+      "Calqulis is built for mid sized businesses, large enterprises, and national organizations that want a clearer, evidence based view of buying behavior and market trends.",
+    url: "/who-we-serve/",
+    siteName: "Calqulis",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Who We Serve | Calqulis",
+    description:
+      "Calqulis is built for mid sized businesses, large enterprises, and national organizations that want a clearer, evidence based view of buying behavior and market trends.",
+  },
 };
 
 const segments = [

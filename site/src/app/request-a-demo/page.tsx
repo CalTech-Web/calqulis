@@ -10,6 +10,20 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/request-a-demo/",
   },
+  openGraph: {
+    title: "Request a Demo | Calqulis",
+    description:
+      "Request a demo of Calqulis, the behavioral intelligence platform for sales opportunities, marketing effectiveness, and strategic decisions.",
+    url: "/request-a-demo/",
+    siteName: "Calqulis",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Request a Demo | Calqulis",
+    description:
+      "Request a demo of Calqulis, the behavioral intelligence platform for sales opportunities, marketing effectiveness, and strategic decisions.",
+  },
 };
 
 export default function RequestDemoPage() {
