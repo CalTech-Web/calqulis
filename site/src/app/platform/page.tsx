@@ -62,7 +62,15 @@ export default function PlatformPage() {
 
       <Section className="bg-white py-20">
         <div className="mx-auto max-w-5xl">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
+              What the platform does
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed text-slate-600">
+              Four capabilities that turn scattered behavioral data into a single actionable view.
+            </p>
+          </div>
+          <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2">
             {capabilities.map((c) => (
               <div key={c.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-8">
                 <h3 className="text-lg font-semibold text-slate-900">{c.title}</h3>
