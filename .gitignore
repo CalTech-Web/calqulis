@@ -1,0 +1,7 @@
+.DS_Store
+.playwright-mcp/
+site/node_modules/
+site/.next/
+site/.vercel/
+site/*.tsbuildinfo
+site/next-env.d.ts
