@@ -55,6 +55,7 @@ const organizationJsonLd = {
   name: "Calqulis",
   legalName: "Calqulis Solutions",
   url: siteUrl,
+  logo: `${siteUrl}/logo.png`,
   description:
     "Calqulis turns behavioral and market intelligence into your next best move. A single platform for sales opportunities, marketing effectiveness, and strategic decisions.",
 };

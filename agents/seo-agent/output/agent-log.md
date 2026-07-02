@@ -57,3 +57,18 @@ Also created `src/lib/site.ts` for the `siteUrl` constant, which had been copy-p
 Verified via `npm run build` + grep across all 10 routes' built HTML: homepage correctly has 0 `BreadcrumbList` (it's the root, no breadcrumb needed), all 9 sub-pages have exactly 1, and the built `sitemap.xml` shows the static dates instead of a build timestamp. Homepage's existing Organization/FAQPage schema confirmed still intact. `npx tsc --noEmit` passed clean.
 
 1 commit, pushed to origin. Vercel deployment built and is Ready. cro-agent and design-agent `agent-log.md` had unrelated pending changes from their own runs, left untouched.
+Both deployments are Ready. Run #4 complete.
+
+Summary: found and fixed two real technical SEO gaps on calqulis.com beyond what runs #1-3 covered:
+
+1. **Missing BreadcrumbList schema** — no page emitted breadcrumb structured data despite a real nested hierarchy under `/solutions/`. Added it to all 9 sub-pages (once via the shared `SolutionTemplate` for the three solutions pages, individually elsewhere), using only real, live URLs.
+2. **Fabricated sitemap freshness signal** — `sitemap.ts` stamped every route's `lastModified` with the build-time `new Date()` on every deploy, regardless of whether content changed. Replaced with static per-route dates that only update when a page's content actually does.
+
+Verified against built HTML output and `tsc --noEmit`, homepage's existing Organization/FAQPage schema confirmed untouched. Two commits pushed to `main`; both resulting Vercel deployments are Ready.
+[2026-07-02 15:22:23] Run #4 finished
+[2026-07-02 15:22:28] Run #5 starting (model: sonnet)
+Audited the site after runs #1-4 (canonicals, Organization/FAQPage/BreadcrumbList schema, OG images, sitemap dates) and found one remaining gap: the Organization JSON-LD in the root layout had no `logo` property. Google's structured data guidelines require a `logo` on Organization markup for Logo/knowledge-panel rich results, and none of the existing image assets (the 32x32 `icon.tsx` favicon, the 1200x630 `opengraph-image.tsx`) are suitable sizes or aspect ratios for that field.
+
+Added `src/app/logo.png/route.tsx`, a static 512x512 Route Handler using Next's `ImageResponse`, reusing the exact brand mark (indigo-to-navy gradient, white node/signal path) already established in `icon.tsx` and `opengraph-image.tsx` rather than inventing a new visual. Set `dynamic = "force-static"` so it prerenders at build time instead of per-request. Referenced it from the Organization JSON-LD as `logo: \`${siteUrl}/logo.png\``.
+
+Verified via `npm run build`: `/logo.png` shows as a static route, the generated PNG is a proper 512x512 RGBA image, and grepping every built page's HTML confirms all 10 real routes now emit `"logo":"https://calqulis.com/logo.png"` in the Organization schema. Visually inspected the rendered mark before committing (first pass under-filled the frame at 288px within a 30x30 viewBox; retuned the viewBox and bumped to 360px so the mark reads clearly at social/schema sizes). `npx tsc --noEmit` passed clean.
