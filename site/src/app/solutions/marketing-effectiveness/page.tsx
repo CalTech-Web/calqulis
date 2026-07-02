@@ -15,12 +15,21 @@ export const metadata: Metadata = {
     url: "/solutions/marketing-effectiveness/",
     siteName: "Calqulis",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Calqulis | Behavioral Intelligence Platform",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Marketing Effectiveness | Calqulis",
     description:
       "Measure which messages, channels, and audiences actually move buyers, then reallocate spend toward what is proven to work.",
+    images: ["/opengraph-image"],
   },
 };
 

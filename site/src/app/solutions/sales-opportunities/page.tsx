@@ -15,12 +15,21 @@ export const metadata: Metadata = {
     url: "/solutions/sales-opportunities/",
     siteName: "Calqulis",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Calqulis | Behavioral Intelligence Platform",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sales Opportunities | Calqulis",
     description:
       "Surface in market buying signals so sales teams prioritize the right accounts and reach demand before competitors see it.",
+    images: ["/opengraph-image"],
   },
 };
 

@@ -17,12 +17,21 @@ export const metadata: Metadata = {
     url: "/about/",
     siteName: "Calqulis",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Calqulis | Behavioral Intelligence Platform",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "About | Calqulis",
     description:
       "Calqulis is a pre launch behavioral intelligence platform built for organizations that want to act on buyer behavior, not just observe it.",
+    images: ["/opengraph-image"],
   },
 };
 

@@ -32,12 +32,21 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "Calqulis",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Calqulis | Behavioral Intelligence Platform",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Calqulis | Behavioral Intelligence Platform",
     description:
       "Calqulis turns behavioral and market intelligence into your next best move.",
+    images: ["/opengraph-image"],
   },
 };
 

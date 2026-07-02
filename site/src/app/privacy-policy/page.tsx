@@ -14,11 +14,20 @@ export const metadata: Metadata = {
     url: "/privacy-policy/",
     siteName: "Calqulis",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Calqulis | Behavioral Intelligence Platform",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Privacy Policy | Calqulis",
     description: "Privacy Policy for Calqulis Solutions.",
+    images: ["/opengraph-image"],
   },
 };
 

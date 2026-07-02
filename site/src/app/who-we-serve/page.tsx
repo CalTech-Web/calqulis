@@ -17,12 +17,21 @@ export const metadata: Metadata = {
     url: "/who-we-serve/",
     siteName: "Calqulis",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Calqulis | Behavioral Intelligence Platform",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Who We Serve | Calqulis",
     description:
       "Calqulis is built for mid sized businesses, large enterprises, and national organizations that want a clearer, evidence based view of buying behavior and market trends.",
+    images: ["/opengraph-image"],
   },
 };
 
