@@ -38,31 +38,31 @@ const process = [
     step: "01",
     title: "Connect",
     description:
-      "Calqulis aggregates behavioral and market intelligence data relevant to your business and industry.",
+      "Behavioral signals, market movement, and consumer activity stream in from every source relevant to your business, converging into one raw signal.",
   },
   {
     step: "02",
     title: "Analyze",
     description:
-      "The platform processes buying behavior and market signals into structured, actionable insight.",
+      "The Calqulis analysis engine processes that raw signal, smoothing noisy buying behavior and market data into structured, actionable insight.",
   },
   {
     step: "03",
     title: "Surface",
     description:
-      "Sales opportunities, marketing performance signals, and strategic trends are surfaced in a single dashboard.",
+      "Structured insight flows onto one live dashboard, where sales opportunities, marketing performance, and strategic trends rise into view.",
   },
   {
     step: "04",
     title: "Act",
     description:
-      "Teams use Calqulis insights to prioritize outreach, reallocate marketing spend, and inform strategic decisions.",
+      "Every insight routes to the team that can act on it: sales prioritizes outreach, marketing reallocates spend, and leadership sharpens strategy.",
   },
   {
     step: "05",
     title: "Refine",
     description:
-      "Intelligence updates continuously so decisions stay current as buyer behavior shifts.",
+      "The loop never stops. Fresh behavior flows back into analysis, so your intelligence stays current as buyer behavior shifts.",
   },
 ];
 

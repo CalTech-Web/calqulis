@@ -116,11 +116,13 @@ No verifiable metrics, ratings, or client results exist yet; Calqulis has not la
 
 | Phase | Title | Description |
 |---|---|---|
-| Step 1 | Connect | Calqulis aggregates behavioral and market intelligence data relevant to your business and industry. |
-| Step 2 | Analyze | The platform processes buying behavior and market signals into structured, actionable insight. |
-| Step 3 | Surface | Sales opportunities, marketing performance signals, and strategic trends are surfaced in a single dashboard. |
-| Step 4 | Act | Teams use Calqulis insights to prioritize outreach, reallocate marketing spend, and inform strategic decisions. |
-| Ongoing | Refine | Intelligence updates continuously so decisions stay current as buyer behavior shifts. |
+| Step 1 | Connect | Behavioral signals, market movement, and consumer activity stream in from every source relevant to your business, converging into one raw signal. |
+| Step 2 | Analyze | The Calqulis analysis engine processes that raw signal, smoothing noisy buying behavior and market data into structured, actionable insight. |
+| Step 3 | Surface | Structured insight flows onto one live dashboard, where sales opportunities, marketing performance, and strategic trends rise into view. |
+| Step 4 | Act | Every insight routes to the team that can act on it: sales prioritizes outreach, marketing reallocates spend, and leadership sharpens strategy. |
+| Ongoing | Refine | The loop never stops. Fresh behavior flows back into analysis, so your intelligence stays current as buyer behavior shifts. |
+
+> Homepage copy updated July 2026 to narrate the line-art process illustration on the homepage (sources converge into a raw signal, the analysis engine structures it, the live dashboard surfaces it, insights route to outreach, spend, and strategy, and the refine loop returns fresh behavior to analysis).
 
 > This is a reasonable, brief-consistent description of a behavioral intelligence SaaS workflow. Refine wording once actual product UX/onboarding flow is finalized.
 
