@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from "react";
 /**
  * One continuous line-art scene for the "How Calqulis works" section.
  * A single signal travels the whole story: scattered behavior streams in,
- * converges, passes through the analysis machine, rises through the
- * dashboard as the chart itself, splits into three team actions, and a
+ * converges, passes through the analysis machine, rises into a clear
+ * insight, splits into three team actions, and a
  * dashed refine loop returns it to analysis. Strokes draw on in story
  * order when scrolled into view; a pulse rides the full circuit.
  */
@@ -76,7 +76,7 @@ export default function ProcessStory() {
         strokeLinecap="round"
         strokeLinejoin="round"
         role="img"
-        aria-label="One continuous line drawing: scattered behavior signals converge, pass through an analysis machine, rise through a dashboard as a chart ending in a highlighted insight, split into outreach, spend, and strategy actions, then loop back into analysis on a dashed return line"
+        aria-label="One continuous line drawing: scattered behavior signals converge, pass through an analysis machine, rise into a clear highlighted insight, split into outreach, spend, and strategy actions, then loop back into analysis on a dashed return line"
       >
         {/* ---- Act 1: sources stream in and converge ---- */}
         <g stroke={INK} strokeWidth="1.6">
@@ -149,13 +149,12 @@ export default function ProcessStory() {
           STRUCTURED
         </text>
 
-        {/* ---- Act 3: the live dashboard, chart is the signal itself ---- */}
+        {/* ---- Act 3: the signal surfaces as a clear insight ---- */}
         <g stroke={INK} strokeWidth="1.7">
           <rect className="psd" pathLength={1} {...at(8)} x="520" y="95" width="170" height="130" rx="12" />
-          <path className="psd" pathLength={1} {...at(8)} d="M605 225 v14 M584 242 q21 7 42 0" />
         </g>
-        <text className="psf" {...at(8)} x="605" y="266" textAnchor="middle" fontSize="9.5" letterSpacing="0.14em" fill={LABEL}>
-          LIVE DASHBOARD
+        <text className="psf" {...at(8)} x="605" y="248" textAnchor="middle" fontSize="9.5" letterSpacing="0.14em" fill={LABEL}>
+          INSIGHT
         </text>
         <g stroke={DIM} strokeWidth="1.2" strokeDasharray="3 5">
           <path className="psf" {...at(8)} d="M532 145 h146 M532 178 h146" />

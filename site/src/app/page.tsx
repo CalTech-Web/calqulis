@@ -63,7 +63,7 @@ const process: {
     icon: "surface",
     title: "Surface",
     description:
-      "Structured insight flows onto one live dashboard, where sales opportunities, marketing performance, and strategic trends rise into view.",
+      "The structured signal surfaces as clear, decision ready insight, where sales opportunities, marketing performance, and strategic trends rise into view.",
   },
   {
     step: "04",

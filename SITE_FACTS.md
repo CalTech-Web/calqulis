@@ -118,11 +118,11 @@ No verifiable metrics, ratings, or client results exist yet; Calqulis has not la
 |---|---|---|
 | Step 1 | Connect | Behavioral signals, market movement, and consumer activity stream in from every source relevant to your business, converging into one raw signal. |
 | Step 2 | Analyze | The Calqulis analysis engine processes that raw signal, smoothing noisy buying behavior and market data into structured, actionable insight. |
-| Step 3 | Surface | Structured insight flows onto one live dashboard, where sales opportunities, marketing performance, and strategic trends rise into view. |
+| Step 3 | Surface | The structured signal surfaces as clear, decision ready insight, where sales opportunities, marketing performance, and strategic trends rise into view. |
 | Step 4 | Act | Every insight routes to the team that can act on it: sales prioritizes outreach, marketing reallocates spend, and leadership sharpens strategy. |
 | Ongoing | Refine | The loop never stops. Fresh behavior flows back into analysis, so your intelligence stays current as buyer behavior shifts. |
 
-> Homepage copy updated July 2026 to narrate the line-art process illustration on the homepage (sources converge into a raw signal, the analysis engine structures it, the live dashboard surfaces it, insights route to outreach, spend, and strategy, and the refine loop returns fresh behavior to analysis).
+> Homepage copy updated July 2026 to narrate the line-art process illustration on the homepage (sources converge into a raw signal, the analysis engine structures it, the structured signal surfaces as a clear insight, insights route to outreach, spend, and strategy, and the refine loop returns fresh behavior to analysis). The surface step is intentionally kept generic (a clear insight, not a literal dashboard) so the platform is not pigeonholed as a dashboard product.
 
 > This is a reasonable, brief-consistent description of a behavioral intelligence SaaS workflow. Refine wording once actual product UX/onboarding flow is finalized.
 
