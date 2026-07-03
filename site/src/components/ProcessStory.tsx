@@ -21,7 +21,8 @@ const LABEL = "#64748b";
 // dashboard chart, out the middle action, around the refine loop, back
 // along the return line, and into the machine again.
 const CIRCUIT =
-  "M300 160 L360 160 L420 196 L535 196 L568 172 L594 184 L624 150 L650 136 " +
+  "M300 160 C312 178 318 190 330 190 L336 181 L342 192 L348 183 C380 175 402 186 420 196 " +
+  "L535 196 L568 172 L594 184 L624 150 L650 136 " +
   "L658 136 C700 136 722 138 744 142 C800 152 830 158 872 162 " +
   "C980 165 1000 163 1036 160 A44 44 0 1 1 1080 204 " +
   "C1080 275 1030 298 950 298 L430 298 C392 298 364 276 364 240 L364 226 " +
@@ -111,21 +112,31 @@ export default function ProcessStory() {
           RAW
         </text>
 
-        {/* ---- Act 2: the analysis machine ---- */}
+        {/* ---- Act 2: the analysis engine ---- */}
+        <text className="psf" {...at(5)} x="360" y="94" textAnchor="middle" fontSize="9.5" letterSpacing="0.14em" fill={LABEL}>
+          ANALYSIS ENGINE
+        </text>
         <g stroke={INK} strokeWidth="1.7">
           <rect className="psd" pathLength={1} {...at(5)} x="300" y="105" width="120" height="110" rx="14" />
-          <circle className="psd" pathLength={1} {...at(6)} cx="360" cy="142" r="15" />
+          <circle className="psd" pathLength={1} {...at(6)} cx="349" cy="137" r="13" />
           <path
             className="psd"
             pathLength={1}
             {...at(6)}
-            d="M360 121 v6 M360 157 v6 M339 142 h6 M375 142 h6 M345 127 l4 4 M371 153 l4 4 M375 127 l-4 4 M349 153 l-4 4"
+            d="M349 118 v6 M349 150 v6 M330 137 h6 M362 137 h6 M358 128 l4 -4 M340 128 l-4 -4 M358 146 l4 4 M340 146 l-4 4"
+          />
+          <circle className="psd" pathLength={1} {...at(6)} cx="376" cy="155" r="8.5" />
+          <path className="psd" pathLength={1} {...at(6)} d="M376 141 v5 M376 164 v5 M362 155 h5 M385 155 h5" />
+        </g>
+        <g stroke={DIM} strokeWidth="1.4">
+          <path
+            className="psd"
+            pathLength={1}
+            {...at(6)}
+            d="M300 160 C312 178 318 190 330 190 l6 -9 6 11 6 -9 C380 175 402 186 420 196"
           />
         </g>
-        <g stroke={DIM} strokeWidth="1.3">
-          <path className="psd" pathLength={1} {...at(6)} d="M332 184 h56 M332 196 h40 M332 208 h48" />
-        </g>
-        <circle className="psf" {...at(6)} cx="360" cy="142" r="2.6" fill={CYAN} />
+        <circle className="psf" {...at(6)} cx="349" cy="137" r="2.6" fill={CYAN} />
 
         {/* ---- structured run into the dashboard ---- */}
         <g stroke={SIGNAL} strokeWidth="2.2">
@@ -138,14 +149,14 @@ export default function ProcessStory() {
           STRUCTURED
         </text>
 
-        {/* ---- Act 3: the dashboard, chart is the signal itself ---- */}
+        {/* ---- Act 3: the live dashboard, chart is the signal itself ---- */}
         <g stroke={INK} strokeWidth="1.7">
           <rect className="psd" pathLength={1} {...at(8)} x="520" y="95" width="170" height="130" rx="12" />
-          <path className="psd" pathLength={1} {...at(8)} d="M520 118 h170" />
-          <circle className="psd" pathLength={1} {...at(8)} cx="534" cy="107" r="2.6" />
-          <circle className="psd" pathLength={1} {...at(8)} cx="545" cy="107" r="2.6" />
-          <circle className="psd" pathLength={1} {...at(8)} cx="556" cy="107" r="2.6" />
+          <path className="psd" pathLength={1} {...at(8)} d="M605 225 v14 M584 242 q21 7 42 0" />
         </g>
+        <text className="psf" {...at(8)} x="605" y="266" textAnchor="middle" fontSize="9.5" letterSpacing="0.14em" fill={LABEL}>
+          LIVE DASHBOARD
+        </text>
         <g stroke={DIM} strokeWidth="1.2" strokeDasharray="3 5">
           <path className="psf" {...at(8)} d="M532 145 h146 M532 178 h146" />
         </g>
