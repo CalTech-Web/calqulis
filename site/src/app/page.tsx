@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import Section from "@/components/Section";
 import NetworkMotif from "@/components/NetworkMotif";
 import ProcessStory from "@/components/ProcessStory";
+import ProcessIcon, { type ProcessIconName } from "@/components/ProcessIcon";
 import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
@@ -33,33 +34,49 @@ const useCases = [
   },
 ];
 
-const process = [
+const process: {
+  step: string;
+  phase: string;
+  icon: ProcessIconName;
+  title: string;
+  description: string;
+}[] = [
   {
     step: "01",
+    phase: "Step 01",
+    icon: "connect",
     title: "Connect",
     description:
       "Behavioral signals, market movement, and consumer activity stream in from every source relevant to your business, converging into one raw signal.",
   },
   {
     step: "02",
+    phase: "Step 02",
+    icon: "analyze",
     title: "Analyze",
     description:
       "The Calqulis analysis engine processes that raw signal, smoothing noisy buying behavior and market data into structured, actionable insight.",
   },
   {
     step: "03",
+    phase: "Step 03",
+    icon: "surface",
     title: "Surface",
     description:
       "Structured insight flows onto one live dashboard, where sales opportunities, marketing performance, and strategic trends rise into view.",
   },
   {
     step: "04",
+    phase: "Step 04",
+    icon: "act",
     title: "Act",
     description:
       "Every insight routes to the team that can act on it: sales prioritizes outreach, marketing reallocates spend, and leadership sharpens strategy.",
   },
   {
     step: "05",
+    phase: "Ongoing",
+    icon: "refine",
     title: "Refine",
     description:
       "The loop never stops. Fresh behavior flows back into analysis, so your intelligence stays current as buyer behavior shifts.",
@@ -197,10 +214,13 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
             {process.map((p) => (
               <div key={p.step} className="relative">
-                <span className="relative z-10 inline-flex h-12 w-12 items-center justify-center rounded-full border border-brand-indigo/20 bg-white text-sm font-semibold text-brand-indigo shadow-sm">
-                  {p.step}
+                <span className="relative z-10 inline-flex h-12 w-12 items-center justify-center rounded-full border border-brand-indigo/20 bg-white shadow-sm">
+                  <ProcessIcon name={p.icon} />
                 </span>
-                <h3 className="mt-4 text-lg font-semibold text-slate-900">{p.title}</h3>
+                <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-indigo">
+                  {p.phase}
+                </p>
+                <h3 className="mt-1 text-lg font-semibold text-slate-900">{p.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-slate-600">{p.description}</p>
               </div>
             ))}
