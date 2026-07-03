@@ -118,11 +118,11 @@ No verifiable metrics, ratings, or client results exist yet; Calqulis has not la
 |---|---|---|
 | Step 1 | Connect | Behavioral signals, market movement, and consumer activity stream in from every source relevant to your business, converging into one raw signal. |
 | Step 2 | Analyze | The Calqulis analysis engine processes that raw signal, smoothing noisy buying behavior and market data into structured, actionable insight. |
-| Step 3 | Surface | The structured signal surfaces as clear, decision ready insight, where sales opportunities, marketing performance, and strategic trends rise into view. |
-| Step 4 | Act | Every insight routes to the team that can act on it: sales prioritizes outreach, marketing reallocates spend, and leadership sharpens strategy. |
-| Ongoing | Refine | The loop never stops. Fresh behavior flows back into analysis, so your intelligence stays current as buyer behavior shifts. |
+| Step 3 | Surface | The structured signal surfaces as a clear read, so the patterns that matter rise into view instead of staying buried in noise. |
+| Step 4 | Act | That clear signal turns into work you can use: insight that guides the next decision, reports generated automatically, and routine actions carried out on their own. |
+| Ongoing | Refine | The loop never stops. Fresh signal flows back into analysis, so your intelligence stays current as conditions shift. |
 
-> Homepage copy updated July 2026 to narrate the line-art process illustration on the homepage (sources converge into a raw signal, the analysis engine structures it, the structured signal surfaces as a clear insight, insights route to outreach, spend, and strategy, and the refine loop returns fresh behavior to analysis). The surface step is intentionally kept generic (a clear insight, not a literal dashboard) so the platform is not pigeonholed as a dashboard product.
+> Homepage copy updated July 2026 to narrate the line-art process illustration on the homepage (sources converge into a raw signal, the analysis engine structures it, the structured signal surfaces as a clear signal, and that clarity fans out into three outputs, insight, automated reports, and automated actions, before a refine loop returns fresh signal to analysis). The endpoint is intentionally kept generic (multiple outputs, not a single insight panel or a literal dashboard) so the platform is not pigeonholed as a dashboard or insight only product. Raw input is kept as a labeled stage because the platform works from raw data.
 
 > This is a reasonable, brief-consistent description of a behavioral intelligence SaaS workflow. Refine wording once actual product UX/onboarding flow is finalized.
 

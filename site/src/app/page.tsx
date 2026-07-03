@@ -63,7 +63,7 @@ const process: {
     icon: "surface",
     title: "Surface",
     description:
-      "The structured signal surfaces as clear, decision ready insight, where sales opportunities, marketing performance, and strategic trends rise into view.",
+      "The structured signal surfaces as a clear read, so the patterns that matter rise into view instead of staying buried in noise.",
   },
   {
     step: "04",
@@ -71,7 +71,7 @@ const process: {
     icon: "act",
     title: "Act",
     description:
-      "Every insight routes to the team that can act on it: sales prioritizes outreach, marketing reallocates spend, and leadership sharpens strategy.",
+      "That clear signal turns into work you can use: insight that guides the next decision, reports generated automatically, and routine actions carried out on their own.",
   },
   {
     step: "05",
@@ -79,7 +79,7 @@ const process: {
     icon: "refine",
     title: "Refine",
     description:
-      "The loop never stops. Fresh behavior flows back into analysis, so your intelligence stays current as buyer behavior shifts.",
+      "The loop never stops. Fresh signal flows back into analysis, so your intelligence stays current as conditions shift.",
   },
 ];
 

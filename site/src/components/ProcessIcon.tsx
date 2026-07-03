@@ -46,11 +46,10 @@ export default function ProcessIcon({ name }: { name: ProcessIconName }) {
       {name === "surface" && (
         <>
           <g stroke={INK} strokeWidth="1.8">
-            <rect x="5" y="6" width="22" height="15" rx="2.5" />
-            <path d="M16 21 v4 M11.5 27 q4.5 2 9 0" />
+            <rect x="5" y="8" width="22" height="16" rx="3" />
           </g>
-          <path d="M8.5 17.5 l4 -4.5 3 2.5 5.5 -6" stroke={SIGNAL} strokeWidth="1.8" />
-          <circle cx="21" cy="9.5" r="1.4" fill={CYAN} />
+          <path d="M9 19 l4 -4.5 3 2.5 5.5 -6" stroke={SIGNAL} strokeWidth="1.8" />
+          <circle cx="21.5" cy="11" r="1.4" fill={CYAN} />
         </>
       )}
       {name === "act" && (

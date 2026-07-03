@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
  * One continuous line-art scene for the "How Calqulis works" section.
  * A single signal travels the whole story: scattered behavior streams in,
  * converges, passes through the analysis machine, rises into a clear
- * insight, splits into three team actions, and a
+ * signal, splits into three outputs (insight, reports, actions), and a
  * dashed refine loop returns it to analysis. Strokes draw on in story
  * order when scrolled into view; a pulse rides the full circuit.
  */
@@ -76,7 +76,7 @@ export default function ProcessStory() {
         strokeLinecap="round"
         strokeLinejoin="round"
         role="img"
-        aria-label="One continuous line drawing: scattered behavior signals converge, pass through an analysis machine, rise into a clear highlighted insight, split into outreach, spend, and strategy actions, then loop back into analysis on a dashed return line"
+        aria-label="One continuous line drawing: scattered signals converge, pass through an analysis machine, rise into a clear highlighted signal, split into insight, reports, and automated actions, then loop back into analysis on a dashed return line"
       >
         {/* ---- Act 1: sources stream in and converge ---- */}
         <g stroke={INK} strokeWidth="1.6">
@@ -149,12 +149,12 @@ export default function ProcessStory() {
           STRUCTURED
         </text>
 
-        {/* ---- Act 3: the signal surfaces as a clear insight ---- */}
+        {/* ---- Act 3: the signal surfaces as a clear, readable signal ---- */}
         <g stroke={INK} strokeWidth="1.7">
           <rect className="psd" pathLength={1} {...at(8)} x="520" y="95" width="170" height="130" rx="12" />
         </g>
         <text className="psf" {...at(8)} x="605" y="248" textAnchor="middle" fontSize="9.5" letterSpacing="0.14em" fill={LABEL}>
-          INSIGHT
+          CLEAR SIGNAL
         </text>
         <g stroke={DIM} strokeWidth="1.2" strokeDasharray="3 5">
           <path className="psf" {...at(8)} d="M532 145 h146 M532 178 h146" />
@@ -167,38 +167,45 @@ export default function ProcessStory() {
         </g>
         <circle className="psf" {...at(9)} cx="650" cy="136" r="3" fill={CYAN} />
 
-        {/* ---- Act 4: the insight splits into three actions ---- */}
+        {/* ---- Act 4: the clear signal splits into three outputs ---- */}
         <g stroke={SIGNAL} strokeWidth="2.2">
           <path className="psd" pathLength={1} {...at(10)} d="M658 136 C700 136 722 138 744 142" />
         </g>
         <circle className="psd" pathLength={1} {...at(10)} cx="748" cy="143" r="5" stroke={SIGNAL} strokeWidth="2" />
         <g stroke={DIM} strokeWidth="1.3">
-          <path className="psd" pathLength={1} {...at(11)} d="M752 139 C800 102 850 70 880 66" />
+          <path className="psd" pathLength={1} {...at(11)} d="M752 139 C800 102 850 70 884 62" />
           <path className="psd" pathLength={1} {...at(11)} d="M753 144 C800 152 830 158 872 162" />
-          <path className="psd" pathLength={1} {...at(11)} d="M752 148 C800 186 850 228 880 240" />
+          <path className="psd" pathLength={1} {...at(11)} d="M752 148 C800 186 850 228 892 242" />
         </g>
+        {/* insight: a rising trend line */}
         <g stroke={INK} strokeWidth="1.7">
-          <circle className="psd" pathLength={1} {...at(12)} cx="902" cy="66" r="20" />
-          <circle className="psd" pathLength={1} {...at(12)} cx="902" cy="66" r="11" />
-          <path className="psd" pathLength={1} {...at(12)} d="M882 184 h44 M890 184 v-18 M902 184 v-30 M914 184 v-10" />
-          <path className="psd" pathLength={1} {...at(12)} d="M902 258 v-34 M902 224 l20 7 -20 7 M884 258 q18 7 36 0" />
+          <path className="psd" pathLength={1} {...at(12)} d="M887 76 L895 70 L901 73 L909 62 L917 55" />
         </g>
-        <circle className="psf" {...at(12)} cx="902" cy="66" r="2.8" fill={CYAN} />
+        <circle className="psf" {...at(12)} cx="917" cy="55" r="2.8" fill={CYAN} />
+        {/* reports: a document with text lines */}
+        <g stroke={INK} strokeWidth="1.6">
+          <path className="psd" pathLength={1} {...at(12)} d="M890 152 h18 l6 6 v26 h-24 z M908 152 v6 h6" />
+          <path className="psd" pathLength={1} {...at(12)} d="M895 165 h13 M895 171 h13 M895 177 h9" />
+        </g>
+        {/* actions: an automation bolt */}
+        <g stroke={INK} strokeWidth="1.7">
+          <path className="psd" pathLength={1} {...at(12)} d="M905 225 l-11 19 h7 l-3 13 12 -21 h-7 z" />
+        </g>
         <text className="psf" {...at(12)} x="902" y="102" textAnchor="middle" fontSize="9" letterSpacing="0.14em" fill={LABEL}>
-          OUTREACH
+          INSIGHT
         </text>
-        <text className="psf" {...at(12)} x="904" y="200" textAnchor="middle" fontSize="9" letterSpacing="0.14em" fill={LABEL}>
-          SPEND
+        <text className="psf" {...at(12)} x="902" y="200" textAnchor="middle" fontSize="9" letterSpacing="0.14em" fill={LABEL}>
+          REPORTS
         </text>
         <text className="psf" {...at(12)} x="902" y="278" textAnchor="middle" fontSize="9" letterSpacing="0.14em" fill={LABEL}>
-          STRATEGY
+          ACTIONS
         </text>
 
         {/* ---- Act 5: actions feed the refine loop ---- */}
         <g stroke={DIM} strokeWidth="1.3">
-          <path className="psd" pathLength={1} {...at(13)} d="M924 66 C990 80 1010 110 1032 142" />
-          <path className="psd" pathLength={1} {...at(13)} d="M926 165 C980 165 1000 163 1033 160" />
-          <path className="psd" pathLength={1} {...at(13)} d="M920 250 C990 235 1010 200 1032 176" />
+          <path className="psd" pathLength={1} {...at(13)} d="M921 58 C990 80 1010 110 1032 142" />
+          <path className="psd" pathLength={1} {...at(13)} d="M918 166 C980 165 1000 163 1033 160" />
+          <path className="psd" pathLength={1} {...at(13)} d="M913 246 C990 235 1010 200 1032 176" />
         </g>
         <g stroke={INK} strokeWidth="1.8">
           <circle className="psd" pathLength={1} {...at(13)} cx="1080" cy="160" r="44" />
@@ -218,7 +225,7 @@ export default function ProcessStory() {
         </g>
         <path className="psd" pathLength={1} {...at(15)} d="M357 233 l7 -11 7 11" stroke={SIGNAL} strokeWidth="1.8" />
         <text className="psf" {...at(15)} x="720" y="316" textAnchor="middle" fontSize="9.5" letterSpacing="0.16em" fill={LABEL}>
-          FRESH BEHAVIOR FLOWS BACK INTO ANALYSIS
+          FRESH SIGNAL FLOWS BACK INTO ANALYSIS
         </text>
 
         {/* ---- living signal: dots stream in, one pulse rides the circuit ---- */}
